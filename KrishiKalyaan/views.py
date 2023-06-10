@@ -21,8 +21,10 @@ def about(request):
 def schemes(request):
     return render(request,'KrishiKalyaan/schemes.html')
 
+
 def livefeedpage(request):
     return render(request,'KrishiKalyaan/404.html')
+
 def community(request):
     return render(request,'KrishiKalyaan/404.html')
 
@@ -67,7 +69,8 @@ def latestnews(request):
     #       'apiKey=cb2dbc632d8d4eefb8cbf1e87abb2a78')
     url = ('https://newsapi.org/v2/top-headlines?'
            'country=in&'
-           'apiKey=cb2dbc632d8d4eefb8cbf1e87abb2a78')
+        #    'category=technology&'
+           'apiKey=f5f8d71c4026477a911ece0719e040ff')
     response = requests.get(url)
     l=response.json()['articles']
     #pprint(response.json()['articles'][0]['urlToImage'])
