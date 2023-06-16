@@ -14,19 +14,16 @@ def index(request):
 def about(request):
     return render(request,'KrishiKalyaan/about.html')
 
-# def prediction(request):
-    
-#     return render(request,'KrishiKalyaan/prediction.html')
+
 
 def schemes(request):
     return render(request,'KrishiKalyaan/schemes.html')
 
 
-def livefeedpage(request):
-    return render(request,'KrishiKalyaan/404.html')
 
-def community(request):
-    return render(request,'KrishiKalyaan/404.html')
+
+def organic(request):
+    return render(request,'KrishiKalyaan/organicfarming.html')
 
 def contact(request):
     return render(request,'KrishiKalyaan/contact.html')
@@ -64,9 +61,7 @@ def predict(request):
     return render(request, 'KrishiKalyaan/prediction.html')
 
 def latestnews(request):
-    #url = ('https://newsapi.org/v2/top-headlines?'
-    #       'sources=bbc-news&'
-    #       'apiKey=cb2dbc632d8d4eefb8cbf1e87abb2a78')
+   
     url = ('https://newsapi.org/v2/top-headlines?'
            'country=in&'
         #    'category=technology&'

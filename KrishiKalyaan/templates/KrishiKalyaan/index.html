@@ -1,8 +1,4 @@
 {% load static %}
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,11 +44,9 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" >
-	(function(){var gtConstEvalStartTime = new Date();/*
+	(function(){var gtConstEvalStartTime = new Date();
 
- Copyright The Closure Library Authors.
- SPDX-License-Identifier: Apache-2.0
-*/
+ 
 var h=this||self,l=/^[\w+/_-]+[=]{0,2}$/,m=null;function n(a){return(a=a.querySelector&&a.querySelector("script[nonce]"))&&(a=a.nonce||a.getAttribute("nonce"))&&l.test(a)?a:""}function p(a,b){function c(){}c.prototype=b.prototype;a.i=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.h=function(g,f,k){for(var e=Array(arguments.length-2),d=2;d<arguments.length;d++)e[d-2]=arguments[d];return b.prototype[f].apply(g,e)}}function q(a){return a};function r(a){if(Error.captureStackTrace)Error.captureStackTrace(this,r);else{var b=Error().stack;b&&(this.stack=b)}a&&(this.message=String(a))}p(r,Error);r.prototype.name="CustomError";function u(a,b){a=a.split("%s");for(var c="",g=a.length-1,f=0;f<g;f++)c+=a[f]+(f<b.length?b[f]:"%s");r.call(this,c+a[g])}p(u,r);u.prototype.name="AssertionError";function v(a,b){throw new u("Failure"+(a?": "+a:""),Array.prototype.slice.call(arguments,1));};var w;function x(a,b){this.g=b===y?a:""}x.prototype.toString=function(){return this.g+""};var y={};function z(a){var b=document.getElementsByTagName("head")[0];b||(b=document.body.parentNode.appendChild(document.createElement("head")));b.appendChild(a)}
 function _loadJs(a){var b=document;var c="SCRIPT";"application/xhtml+xml"===b.contentType&&(c=c.toLowerCase());c=b.createElement(c);c.type="text/javascript";c.charset="UTF-8";if(void 0===w){b=null;var g=h.trustedTypes;if(g&&g.createPolicy){try{b=g.createPolicy("goog#html",{createHTML:q,createScript:q,createScriptURL:q})}catch(t){h.console&&h.console.error(t.message)}w=b}else w=b}a=(b=w)?b.createScriptURL(a):a;a=new x(a,y);a:{try{var f=c&&c.ownerDocument,k=f&&(f.defaultView||f.parentWindow);k=k||h;
 if(k.Element&&k.Location){var e=k;break a}}catch(t){}e=null}if(e&&"undefined"!=typeof e.HTMLScriptElement&&(!c||!(c instanceof e.HTMLScriptElement)&&(c instanceof e.Location||c instanceof e.Element))){e=typeof c;if("object"==e&&null!=c||"function"==e)try{var d=c.constructor.displayName||c.constructor.name||Object.prototype.toString.call(c)}catch(t){d="<object could not be stringified>"}else d=void 0===c?"undefined":null===c?"null":typeof c;v("Argument is not a %s (or a non-Element, non-Location mock); got: %s",
@@ -139,23 +133,14 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 							<li><a href="/">Home</a></li>
 								<li><a href="/about/">About Us</a></li>
 								<li><a href="/predict/">Prediction</a></li>
-								<li><a href="/schemes/">Schemes</a></li>#}
-								<li><a href="/latestnews/">Latest News</a></li>#}
-<!-- {#								<li><a href="organic.html">Organic Farming</a></li>#} -->
-								<li><a href="/livefeedpage/">Live Feed Page</a></li>
-								<li><a href="/community/">Community</a></li>
+								<li><a href="/schemes/">Schemes</a></li>
+								<li><a href="/latestnews/">Latest News</a></li>
+								<li><a href="/organic_farming/">Organic Farming</a></li>
+								<li><a href='{% static "KrishiKalyaan/notebook/crop_recommendation_EDA.html" %}' target="_blank">Notebook</a></li>
+								<!-- <li><a href="/community/">Community</a></li> -->
 								<li><a href="/contact/">Contact</a></li>
 
-                                <!-- <li><a href="{% url 'home' %}">Home</a></li>
-								<li><a href="{% url 'about' %}">About Us</a></li>
-								<li><a href="{% url 'predict' %}">Prediction</a></li>
-								<li><a href="{% url 'schemes' %}">Schemes</a></li>
-								<li><a href="{% url 'latestnews' %}">Latest News</a></li>
-								
-								<li><a href="{% url 'livefeedpage' %}">Live Feed Page</a></li>
-								<li><a href="{% url 'community' %}">Community</a></li>
-								<li><a href="{% url 'contact' %}">Contact</a></li> -->
-
+                              
 							</ul>
                             <!----start-top-nav-script---->
 		                     <script type="text/javascript" src="{% static 'KrishiKalyaan/js/responsive-nav.js' %}"></script>
@@ -226,7 +211,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 					</div>
 					<div class="col-md-4 contact-left">
 						<h4><u>Address</u></h4>
-						<p>Zero Mile Stone, Nagpur - Historical Landmark</p>
+						<p>Ithum Tower - Noida Sector 62</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -235,7 +220,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 		<div class="footer">
              <div class="container">
                 <div class="footer-text">
-					<p>DIGITAL KISAAN PORTAL</p>
+					<p>Krishi Kalyaan Portal</p>
 				</div>
              </div>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
