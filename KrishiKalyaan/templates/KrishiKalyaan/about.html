@@ -12,6 +12,17 @@
     <link href="{% static 'KrishiKalyaan/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
     <link href="{% static 'KrishiKalyaan/css/style.css' %}" rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+
+<!-- ============================= -->
+<style>
+    /* Add your CSS styles here */
+    .selected {
+      border-bottom: 2px solid white;
+	 
+    }
+  </style>
 </head>
 <body>
 	<!--start-header-->
@@ -47,8 +58,8 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 							<!--start-top-nav-->
 							 <div class="top-nav">
 								<ul>
-									<li class="active"><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>Log in</a></li>
-									<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">Sign up</a></li>
+									<!-- <li class="active"><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>Log in</a></li>
+									<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">Sign up</a></li> -->
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -62,7 +73,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 
                 <script src="{% static 'KrishiKalyaan/js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
 					<!---//pop-up-box---->
-				<div id="small-dialog" class="mfp-hide">
+				<!-- <div id="small-dialog" class="mfp-hide">
 						<div class="login">
 							<h3>Log In</h3>
 							<h4>Already a Member</h4>
@@ -82,8 +93,8 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 							<input type="submit"  value="SignUp"/>
 						</div>
 					</div>	
-				 <script>
-						$(document).ready(function() {
+				 <script> 
+						 $(document).ready(function() {
 						$('.popup-with-zoom-anim').magnificPopup({
 							type: 'inline',
 							fixedContentPos: false,
@@ -97,7 +108,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 						});
 																						
 						});
-				</script>					
+				</script>					 -->
 		<!--End-header-->
 		<div class="navgation">
 					<div class="menu">
@@ -156,12 +167,13 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 					<div class="col-md-4 about-left">
 						<h3>OUR Main Featurs</h3>
 						<ul>
-							<li><a href="/predict/">Live Crop Prediction System</a></li>
+							
 							<li><a href="/predict/">Crop Recommendation System</a></li>
 							<li><a href="/latestnews/">Latest agriculture news regarding weather,climate changes,rainfall in the region,etc</a></li>
 							<li><a href="/schemes/">Subsidy schemes for the farmers</a></li>
-							<li><a href="/community/">Community for the farmers and by the farmers</a></li>
-							<li><a href="/livefeedpage/">Live Feed Page</a></li>
+							<li><a href="/organic_farming/">Natural Organic Alternatives to Synthetic Chemicals in Organic Farming</a></li>
+							<li><a href='{% static "KrishiKalyaan/notebook/crop_recommendation_EDA.html" %}'>Notebook of whole EDA process and model training</a></li>
+							
 							<li><a href="/">Farmer-friendly Chatbot</a></li>
 
 
@@ -180,5 +192,24 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
              </div>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
      </div>
+
+
+
+
+
+<!-- =================================== -->
+<script>
+   	document.addEventListener('DOMContentLoaded', function() {
+      var navItems = document.querySelectorAll('.nav li');
+
+      for (var i = 0; i < navItems.length; i++) {
+        var link = navItems[i].querySelector('a');
+        if (link.href === window.location.href) {
+          navItems[i].classList.add('selected');
+          break;
+        }
+      }
+    });
+  </script> 
 </body>
 </html>

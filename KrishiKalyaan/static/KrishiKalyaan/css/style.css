@@ -974,7 +974,7 @@ ul.tabs-menu li a img{
 .contact-bottom-top {
 	margin-top: 2.5em;
 }
-.contact-text input[type="text"],.contact-textarea textarea,.contact-but input[type="submit"],.reply input[type="text"],.reply textarea{
+.contact-text input[type="text"],.contact-text input[type="tel"],.contact-text input[type="email"], .contact-textarea textarea,.contact-but input[type="submit"],.reply input[type="text"],.reply textarea{
 	box-shadow: 0px 0px 0px 1px rgba(153, 153, 153, 0.17);
 	-webkit-border-radius: 0px 0px 0px 1px rgba(153, 153, 153, 0.17);
 	-moz-border-radius: 0px 0px 0px 1px rgba(153, 153, 153, 0.17);
@@ -986,7 +986,9 @@ ul.tabs-menu li a img{
 	-o-border-radius: 0.3em;
 	-ms-border-radius: 0.3em;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type="tel"],
+.contact-text input[type="email"]{
 	width: 33.05%;
 	color: #898888;
 	outline: none;
@@ -997,6 +999,8 @@ ul.tabs-menu li a img{
 	border: solid 1px #D5D4D4;
 	-webkit-appearance: none;
 }
+
+
 .contact-textarea textarea {
 	resize: none;
 	width: 100%;
@@ -1468,7 +1472,9 @@ p.para2 {
 	font-size: 1.1em;
 	margin: 0px 0px 2px 0px;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type="tel"],
+.contact-text input[type="email"] {
 	width: 33.02%;
 	margin-bottom: 5px;
 }
@@ -1687,7 +1693,9 @@ p.para2,p.para1{
 	width: 98%;
 	margin: 10px auto;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type = "tel"],
+.contact-text input[type = "email"] {
 	width: 32.9%;
 }
 .contact-top-left {
@@ -2026,7 +2034,9 @@ div#home {
 .map iframe {
 	height: 200px;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type="tel"],
+.contact-text input[type="email"] {
 	width: 32.8%;
 	margin-bottom: 2px;
 	font-size: 15px;
@@ -2353,7 +2363,9 @@ p.para2 {
 	overflow: hidden;
 	height: 44px;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type="tel"],
+.contact-text input[type="email"] {
 	width: 95%;
 	margin-bottom: 11px;
 	padding: 10px 10px;
@@ -2607,7 +2619,9 @@ div#home {
 .contact-text {
 	margin-top: 1.5em;
 }
-.contact-text input[type="text"] {
+.contact-text input[type="text"],
+.contact-text input[type="tel"],
+.contact-text input[type="emaai"] {
 	width: 92%;
 	margin-bottom: 8px;
 	padding: 7px 10px;

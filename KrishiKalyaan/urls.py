@@ -11,6 +11,7 @@ urlpatterns = [
     path('contact/', views.contact,name='contact'),
     path('calculate/', views.index1, name="calculate"),
     path('predict/', views.predict, name="predict"),
+    path('home/', views.feedback, name='feedback'),
 
 
 

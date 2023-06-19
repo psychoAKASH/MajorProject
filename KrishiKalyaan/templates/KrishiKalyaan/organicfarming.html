@@ -15,6 +15,15 @@
     <link href="{% static 'KrishiKalyaan/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
     <link href="{% static 'KrishiKalyaan/css/style.css' %}" rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+	<style>
+		/* Add your CSS styles here */
+		.selected {
+		  border-bottom: 2px solid white;
+		 
+		}
+	  </style>
 </head>
 <body>
 	<!--start-header-->
@@ -52,8 +61,8 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 							<!--start-top-nav-->
 							 <div class="top-nav">
 								<ul>
-									<li class="active"><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>Log in</a></li>
-									<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">Sign up</a></li>
+									<!-- <li class="active"><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span>Log in</a></li>
+									<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog1">Sign up</a></li> -->
 								</ul>
 							</div>
 							<div class="clearfix"> </div>
@@ -68,7 +77,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
                 <script src="{% static 'KrishiKalyaan/js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
 					<!---//pop-up-box---->
 
-					<div id="small-dialog" class="mfp-hide">
+					<!-- <div id="small-dialog" class="mfp-hide">
 						<form>
 						<div class="login">
 							<h3>Log In</h3>
@@ -107,7 +116,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 						});
 
 						});
-				</script>
+				</script> -->
 		<!--End-header-->
 		<div class="navgation">
 					<div class="menu">
@@ -117,15 +126,7 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
 
 
 							<ul class="nav" id="nav">
-<!-- {#								<li><a href="index.html">Home</a></li>#}
-{#								<li><a href="about.html">About Us</a></li>#}
-{#								<li><a href="predict.html">Prediction</a></li>#}
-{#								<li><a href="schemes.html">Schemes</a></li>#}
-{#								<li><a href="news.html">Latest News</a></li>#}
-{#								<li><a href="organic.html">Organic Farming</a></li>#}
-{#								<li><a href="404.html">Live Feed Page</a></li>#}
-{#								<li><a href="404.html">Community</a></li>#}
-{#								<li><a href="#contact">Contact</a></li>#} -->
+
 
                                 <li><a href="/">Home</a></li>
 								<li><a href="/about/">About Us</a></li>
@@ -216,6 +217,22 @@ if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google
              </div>
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
      </div>
+
+
+	 <script>
+		// JavaScript code for adding the selected class to the clicked item
+		document.addEventListener('DOMContentLoaded', function() {
+      var navItems = document.querySelectorAll('.nav li');
+
+      for (var i = 0; i < navItems.length; i++) {
+        var link = navItems[i].querySelector('a');
+        if (link.href === window.location.href) {
+          navItems[i].classList.add('selected');
+          break;
+        }
+      }
+    });
+	  </script> 
 </body>
 </html>
 

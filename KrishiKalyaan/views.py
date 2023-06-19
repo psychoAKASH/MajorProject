@@ -3,7 +3,7 @@ import requests, json
 from django.http import JsonResponse
 import pickle
 import numpy as np
-
+from .models import Data, Feedback_form
 loaded_model = pickle.load(open("model\model.pkl", 'rb'))
 
 # Create your views here.
@@ -52,6 +52,8 @@ def predict(request):
 
         if prediction[0] in crop_dict:
             crop = crop_dict[prediction[0]]
+            data = Data(nitrogen=N, phosphorus=P, potassium=K, temperature=temp, humidity=humidity, pH=ph, rainfall=rainfall, crop_result = crop)
+            data.save()
             result = "{} is the best crop to be cultivated right there".format(crop)
         else:
             result = "Sorry, we could not determine the best crop to be cultivated with the provided data."
@@ -117,4 +119,26 @@ def index1(request):
             #print(current_temperature,current_pressure,current_humidiy,weather_description)
             return current_temperature,current_humidiy,current_temperature+100
         
+
+
+def feedback(request):
+    if request.method == 'POST':
+        name = str(request.POST.get('feedback_name'))
+        phone = str(request.POST.get('feedback_phone'))
+        email = str (request.POST.get('feedback_email'))
+        message = str(request.POST.get('feedback_msg'))
+
+        existing_submission = Feedback_form.objects.filter(phone = phone, email=email).exists()
+        if existing_submission:
+            return render(request, 'KrishiKalyaan/index.html')
+        
+        data = Feedback_form(name=name,
+                             phone=phone,
+                             email=email,
+                             message=message)
+        
+        data.save()
+        data = Feedback_form()
+        return render(request, 'KrishiKalyaan/index.html')
+
 
