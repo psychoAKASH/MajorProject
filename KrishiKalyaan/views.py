@@ -58,7 +58,7 @@ def predict(request):
         else:
             result = "Sorry, we could not determine the best crop to be cultivated with the provided data."
 
-        return render(request, 'Krishikalyaan/prediction.html', {'prediction': result})
+        return render(request, 'Krishikalyaan/prediction.html', {'prediction': result, 'crop': crop})
 
     return render(request, 'KrishiKalyaan/prediction.html')
 

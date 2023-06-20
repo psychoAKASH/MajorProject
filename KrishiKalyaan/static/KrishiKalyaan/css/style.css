@@ -23,7 +23,7 @@ body a{
 }
 div#home {
 	padding: 3em 0px 6em 0px;
-	background: #f1e85b;
+	background: #96bfff;
 	position: relative;
 }
 .top-nav ul li a {
@@ -713,6 +713,7 @@ padding: 2.5em 0;
 	text-align:right;
 	font-size:15px;
 	font-weight: 600;
+	-webkit-text-stroke: 0.2px black;
 }
 .footer-text p a{
 	color:#c79c2b;
@@ -727,7 +728,7 @@ padding: 2.5em 0;
 	text-decoration:none;
 }
 .footer{
-	background:#868686;
+	background:#3a9750;
 	padding:3em 0px;
 }
 /*--end-footer--*/
@@ -2583,6 +2584,7 @@ div#home {
 .footer-text p {
 	font-size: 13px;
 	text-align: center;
+	-webkit-text-stroke: 0.2px black;
 }
 .footer {
 	padding: 1.5em 0px;
